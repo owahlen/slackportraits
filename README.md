@@ -2,16 +2,17 @@
 Download portrait images of users from slack
 
 ## How it works
-The python creates portrait images in the _portraits_ directory.
+The script creates portrait images of all users of the workspace in the _portraits_ directory.
 
 ## Usage
 ```
-usage: facewall.py [-h]
-                   [portraits]
+usage: slackportraits.py [-h] [portraits]
 
 positional arguments:
-  portraits        directory containing portrait images [default: 'portraits']
+  portraits        directory to download portrait images into [default: 'portraits']
 
 optional arguments:
   -h, --help       show this help message and exit
+  
+The SLACK_TOKEN environment variable must contain a valid API-Token.
 ```
